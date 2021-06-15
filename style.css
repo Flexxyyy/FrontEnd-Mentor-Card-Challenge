@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(233, 47%, 7%);
+  display: grid;
+  place-items: center;
+}
+
+.card_container {
+  height: 70vh;
+  width: 70vw;
+  background-color: hsl(244, 38%, 16%);
+  /* border: 1px solid white; */
+  display: flex;
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+
+.left {
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.mini-container {
+  color: hsl(0, 0%, 100%);
+}
+
+.mini-container > h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  /* padding: 10px; */
+  font-family: "Inter", sans-serif;
+  margin: 40px 0;
+}
+
+#span {
+  color: hsl(277, 64%, 61%);
+  font-family: "Inter", sans-serif;
+}
+
+#para {
+  /* padding: 20px; */
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 45px 0;
+}
+
+.data-container {
+  display: inline-grid;
+  /* padding: 10px; */
+}
+
+.data-container > h1 {
+  color: hsl(0, 0%, 100%);
+  margin: 10px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.data-container > h5 {
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.right {
+  width: 35vw;
+  background: -webkit-linear-gradient(
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url("./images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.attribution {
+  font-family: "Inter", sans-serif;
+}
+/* for bigger screens  */
+
+@media (min-width: 901px) {
+  .mini-container > h1 {
+    font-size: 24px;
+  }
+
+  #para {
+    font-size: 16px;
+  }
+
+  .data-container > h1 {
+    font-size: 20px;
+  }
+  .data-container > h5 {
+    font-size: 12px;
+  }
+}
+
+/* for tablets  */
+
+@media (min-width: 721px) and (max-width: 900px) {
+  .mini-container > h1 {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+
+  #para {
+    font-size: 14px;
+  }
+
+  .data-container > h1 {
+    font-size: 16px;
+  }
+  .data-container > h5 {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .attribution {
+    font-size: 14px;
+    display: inline;
+  }
+}
+
+/* for mobile responive */
+@media (min-width: 300px) and (max-width: 720px) {
+  .card_container {
+    height: 510px;
+    width: 65vw;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .left {
+    width: 100%;
+    height: 60%;
+    /* display: inline-flex; */
+  }
+
+  .right {
+    padding: 10px;
+    width: 100%;
+    /* height: 40%; */
+    display: grid;
+    place-items: center;
+    background: -webkit-linear-gradient(
+        rgba(29, 38, 113, 0.8),
+        rgba(195, 55, 100, 0.8)
+      ),
+      url("./images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    height: 192px;
+  }
+  .mini-container > h1 {
+    font-size: 14px;
+    margin-top: 60px;
+  }
+
+  #para {
+    font-size: 12px;
+  }
+
+  .data-container > h1 {
+    font-size: 14px;
+  }
+  .data-container > h5 {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .attribution {
+    font-size: 12px;
+    display: inline;
+  }
+  .attribution > a {
+    display: inline-block;
+  }
+}
